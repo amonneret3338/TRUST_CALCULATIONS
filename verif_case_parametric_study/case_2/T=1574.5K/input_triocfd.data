@@ -1,0 +1,1003 @@
+# template file (/DISK2/home/rl211391/run/radiative_heat_transfer/RADR/triocfd/1x10/verif_case_parametric_study/case_2/input_triocfd.data) filled with: 
+@@TM@@ -> 1.549455e+03
+@@TP@@ -> 1.599455e+03 # 
+
+dimension 2
+Domaine dom_gas
+# BEGIN MESH #
+Lire_MED {
+    domain dom_gas
+    file gas.med
+    exclude_groups 0
+
+}
+# END MESH #
+Domaine dom_fuel_pin
+# BEGIN MESH #
+Lire_MED {
+    domain dom_fuel_pin
+    file fuel_pin.med
+    exclude_groups 18
+    _gas_1_xm_1_1_ _gas_1_xm_2_1_ _gas_1_xm_3_1_ _gas_1_xm_4_1_ _gas_1_xm_5_1_ _gas_1_xm_6_1_ _gas_1_xm_7_1_ _gas_1_xm_8_1_ _gas_1_yp_1_1_ _gas_1_xp_1_1_ _gas_1_xp_2_1_ _gas_1_xp_3_1_ _gas_1_xp_4_1_ _gas_1_xp_5_1_ _gas_1_xp_6_1_ _gas_1_xp_7_1_ _gas_1_xp_8_1_ _gas_1_ym_1_1_
+}
+# END MESH #
+# BEGIN MESH #
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_1_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_1_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_2_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_2_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_3_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_3_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_4_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_4_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_5_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_5_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_6_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_6_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_7_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_7_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_8_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_8_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_9_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_9_1_1_rp_16_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_1_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_1_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_2_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_2_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_3_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_3_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_4_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_4_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_5_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_5_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_6_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_6_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_7_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_7_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_8_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_8_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_9_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_9_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_10_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_10_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_11_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_11_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_12_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_12_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_13_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_13_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_14_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_14_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_15_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_15_1_
+Modif_bord_to_raccord dom_fuel_pin _gas_1_fuel_pin_10_1_1_rp_16_1_
+Modif_bord_to_raccord dom_gas _gas_1_fuel_pin_10_1_1_rp_16_1_
+# END MESH #
+# BEGIN PARTITION
+Partition dom_gas {
+    Partition_tool metis { Nb_parts 2 }
+    Larg_joint 2
+    zones_name DOM_gas
+}
+Partition dom_fuel_pin {
+    Partition_tool metis { Nb_parts 2 }
+    Larg_joint 2
+    zones_name DOM_fuel_pin
+}
+End
+END PARTITION #
+# BEGIN SCATTER
+Scatter DOM_gas.Zones dom_gas
+Scatter DOM_fuel_pin.Zones dom_fuel_pin
+END SCATTER #
+VEF dis
+Schema_Euler_implicite sch
+Read sch {
+    tmax 100000.0
+    tinit 0.0
+    dt_min 0.001
+    dt_max 1000.0
+    dt_impr 100.0
+    solveur Implicite
+    {
+        no_qdm
+        seuil_convergence_solveur 1e-5
+        seuil_convergence_implicite 1e-2
+        solveur gmres { seuil 1e-5 }
+    }
+    facsec 1E6
+    seuil_statio 1E-4
+}
+Pb_conduction pb_fuel_pin
+Associate pb_fuel_pin dom_fuel_pin
+Pb_Thermohydraulique pb_gas
+Associate pb_gas dom_gas
+Probleme_Couple pbc
+Associate pbc pb_fuel_pin
+Associate pbc pb_gas
+Associate pbc sch
+Discretize pbc dis
+Read pb_fuel_pin {
+    Solide {
+        rho Champ_Uniforme 1 10110.0
+        lambda Champ_Uniforme 1 10.0
+        Cp Champ_Uniforme 1 350.0
+    }
+    Conduction {
+        diffusion { }
+        initial_conditions {
+            temperature Champ_fonc_xyz dom_fuel_pin 1 (x+0.02506628274631)/(2.0*0.02506628274631)*(1.599455e+03-1.549455e+03)+1.549455e+03
+        }
+        sources { 
+            puissance_thermique Champ_Uniforme 1 0
+        }
+        boundary_conditions {
+            _gas_1_fuel_pin_1_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_1_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_2_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_3_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_4_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_5_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_6_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_7_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_8_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_9_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_1_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_2_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_3_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_4_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_5_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_6_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_7_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_8_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_9_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_10_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_11_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_12_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_13_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_14_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_15_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_16_1_ paroi_contact_rayo pb_gas _gas_1_fuel_pin_10_1_1_rp_16_1_ transp
+
+        }
+    }
+    Post_processing {
+        Definition_champs {  
+           T_fuel_pin Reduction_0D { 
+               methode moyenne_ponderee
+               source Refchamp { Pb_champ pb_fuel_pin temperature } 
+           }
+        }
+        Probes
+        {
+           T_fuel_pin T_fuel_pin periode 100. numero_elem_sur_maitre 0
+           sonde_T_fuel_pin temperature periode 100. segment 100 -0.02506628274631 0.0 0.02506628274631 0.0
+        }
+        Format lata
+        fields dt_post 100.
+        {
+           temperature elem
+           conductivite elem
+        }
+    }
+}
+Read pb_gas {
+    Fluide_Incompressible {
+        rho Champ_Uniforme 1 6.754e-5
+        lambda Champ_Uniforme 1 0.01
+        Cp Champ_Uniforme 1 1141.1
+        mu Champ_Uniforme 1 4.153e-5
+        beta_th Champ_Uniforme 1 1e-3
+        gravite Champ_Uniforme 2 0 -9.81
+    }
+Modele_Rayonnement_Milieu_Transparent
+{
+    fichier_face_rayo view_factors_corrected.facesrayo
+    fichier_fij view_factors_corrected.factforme
+}
+    Navier_Stokes_standard {
+        equation_non_resolue 1
+        solveur_pression PETSC gcp { precond ssor { omega 1.6 } rtol 1.e-8 impr } 
+        convection { amont }
+        diffusion { }
+        sources { boussinesq_temperature { T0 1000. verif_boussinesq 0 } }
+        initial_conditions { vitesse Champ_Uniforme 2 0. 0. }
+        boundary_conditions {
+            _gas_1_ym_1_1_ symetrie
+            _gas_1_yp_1_1_ symetrie
+            _gas_1_xm_1_1_ paroi_fixe
+            _gas_1_xm_2_1_ paroi_fixe
+            _gas_1_xm_3_1_ paroi_fixe
+            _gas_1_xm_4_1_ paroi_fixe
+            _gas_1_xm_5_1_ paroi_fixe
+            _gas_1_xm_6_1_ paroi_fixe
+            _gas_1_xm_7_1_ paroi_fixe
+            _gas_1_xm_8_1_ paroi_fixe
+            _gas_1_xp_1_1_ paroi_fixe
+            _gas_1_xp_2_1_ paroi_fixe
+            _gas_1_xp_3_1_ paroi_fixe
+            _gas_1_xp_4_1_ paroi_fixe
+            _gas_1_xp_5_1_ paroi_fixe
+            _gas_1_xp_6_1_ paroi_fixe
+            _gas_1_xp_7_1_ paroi_fixe
+            _gas_1_xp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_1_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_2_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_3_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_4_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_5_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_6_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_7_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_8_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_9_1_1_rp_16_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_1_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_2_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_3_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_4_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_5_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_6_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_7_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_8_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_9_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_10_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_11_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_12_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_13_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_14_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_15_1_ paroi_fixe
+            _gas_1_fuel_pin_10_1_1_rp_16_1_ paroi_fixe
+
+        }
+    }
+    Convection_Diffusion_Temperature {
+        diffusion { }
+        convection { amont }
+        initial_conditions {
+            temperature Champ_fonc_xyz dom_gas 1 (x+0.02506628274631)/(2.0*0.02506628274631)*(1.599455e+03-1.549455e+03)+1.549455e+03
+        }
+        sources { 
+            puissance_thermique Champ_Uniforme 1 0.
+        }
+        boundary_conditions {
+            _gas_1_ym_1_1_ symetrie
+            _gas_1_yp_1_1_ symetrie
+            _gas_1_xm_1_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xm_2_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xm_3_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xm_4_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xm_5_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xm_6_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xm_7_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xm_8_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.549455e+03
+            _gas_1_xp_1_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_xp_2_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_xp_3_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_xp_4_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_xp_5_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_xp_6_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_xp_7_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_xp_8_1_ paroi_temperature_imposee Champ_Front_Uniforme 1 1.599455e+03
+            _gas_1_fuel_pin_1_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_1_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_1_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_2_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_2_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_3_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_3_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_4_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_4_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_5_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_5_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_6_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_6_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_7_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_7_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_8_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_8_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_9_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_9_1_1_rp_16_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_1_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_1_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_2_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_2_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_3_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_3_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_4_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_4_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_5_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_5_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_6_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_6_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_7_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_7_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_8_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_8_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_9_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_9_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_10_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_10_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_11_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_11_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_12_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_12_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_13_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_13_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_14_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_14_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_15_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_15_1_ transp
+            _gas_1_fuel_pin_10_1_1_rp_16_1_ paroi_contact_rayo pb_fuel_pin _gas_1_fuel_pin_10_1_1_rp_16_1_ transp
+
+        }
+    }
+    Post_processing {
+        Definition_champs {  
+           T_gas Reduction_0D { 
+               methode moyenne_ponderee
+               source Refchamp { Pb_champ pb_gas temperature } 
+           }
+        }
+        Probes
+        {
+           T_gas T_gas periode 100. numero_elem_sur_maitre 0
+           sonde_T_gas temperature periode 100. segment 100 -0.02506628274631 0.0 0.02506628274631 0.0
+        }
+        Format lata
+        fields dt_post 100.
+        {
+           temperature elem
+           conductivite elem
+        }
+    }
+}
+Solve pbc
+End

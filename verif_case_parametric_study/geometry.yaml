@@ -1,0 +1,16 @@
+--- !Regular2DGeometry
+name: assembly1x10
+hPitch: [0.002506628274631, 0.002506628274631]
+enclosingComponent:
+    !Box2DComponent
+    name: 'gas'
+    hSideLength: [0.02506628274631, 0.002506628274631]
+    surfacePartitioning: [1, 8]
+components: # components dictionary
+  fp:
+    !Cylinder2DComponent
+    name: 'fuel_pin'
+    r: 0.002
+    surfacePartitioning: 16
+layout:   [[ fp, fp, fp, fp, fp, fp, fp, fp, fp, fp ]]
+rotation: [[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
