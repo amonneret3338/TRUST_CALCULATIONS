@@ -1,0 +1,4 @@
+# Printing of the source term Puissance_Thermique_VEF_P1NC of the equation Convection_Diffusion_Temperature of the problem pb_gas
+# Heat power release = Integral(P*dv) [W]
+#            Time
+   1.32703654e+01   0.00000000e+00

@@ -1,0 +1,8 @@
+# Printing of the source term Puissance_Thermique_VEF_P1NC of the equation Conduction of the problem pb_fuel_pin
+# Heat power release = Integral(P*dv) [W]
+#            Time
+   3.94905804e-03   0.00000000e+00
+   1.00344893e+02   0.00000000e+00
+   2.00286951e+02   0.00000000e+00
+   3.00692457e+02   0.00000000e+00
+   3.39268682e+02   0.00000000e+00
