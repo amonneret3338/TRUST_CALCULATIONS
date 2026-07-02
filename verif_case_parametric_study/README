@@ -1,0 +1,9 @@
+## How to use verif_case_parametric_study ? ##
+
+Be sure that the TRUST environment is activated
+
+Then, within each case_., launch "./launch.sh" and it will do the rest on the below directories
+The results of the simulation are TRSUT's like, see "https://cea-trust-platform.github.io/" for more information
+
+bash modifyInput is used to adapt the input with the embree2TRUST ones.
+
