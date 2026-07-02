@@ -3,7 +3,6 @@ input_triocfd.progress*
 input_triocfd.s*
 input_triocfd.l*
 input_triocfd.dt*
-log*
 input_triocfd_*
 input_triocfd.TU
 dom*
@@ -14,3 +13,5 @@ gas3*
 *pdf
 case_4/
 case_3/
+copy*
+modi*
