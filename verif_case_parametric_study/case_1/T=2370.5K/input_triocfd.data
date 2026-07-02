@@ -363,7 +363,7 @@ END SCATTER #
 VEF dis
 Schema_Euler_implicite sch
 Read sch {
-    tmax 100000.0
+    tmax  100000000.0 
     tinit 0.0
     dt_min 0.001
     dt_max 1000.0
