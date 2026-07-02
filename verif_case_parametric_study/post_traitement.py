@@ -238,8 +238,10 @@ if __name__ == "__main__":
     ]
 
     cases = {
-        "pyMCRad": current / "case_0",
-        # "E2T $10^5$": current / "e5",
+        "E2T 4": current / "case_0",
+        "E2T 8": current / "case_1",
+        #"E2T 16": current / "case_2",
+        #"E2T 32": current / "case_3",
         # "E2T $10^6$": current / "e6",
         # "E2T $10^6 cor$": current / "e6_corrected",
         # "E2T $10^7$": current / "e7",
@@ -261,7 +263,7 @@ if __name__ == "__main__":
     # Référence
     # ------------------------------------------------------------------
 
-    reference = "pyMCRad"
+    reference = "E2T 4"
 
     Tref = results[reference]["T"]
     Kref = results[reference]["Ka"]

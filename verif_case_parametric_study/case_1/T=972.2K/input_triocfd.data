@@ -375,7 +375,7 @@ Read sch {
         seuil_convergence_implicite 1e-2
         solveur gmres { seuil 1e-5 }
     }
-    facsec 1E6
+    facsec 1E8 
     seuil_statio 1E-4
 }
 Pb_conduction pb_fuel_pin
