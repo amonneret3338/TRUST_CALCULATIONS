@@ -596,8 +596,8 @@ Read pb_gas {
     }
 Modele_Rayonnement_Milieu_Transparent
 {
-    fichier_face_rayo view_factors_corrected.facesrayo
-    fichier_fij view_factors_corrected.factforme
+    fichier_face_rayo gas1_1000000.facesrayo
+    fichier_fij gas1_1000000.factforme
 }
     Navier_Stokes_standard {
         equation_non_resolue 1
